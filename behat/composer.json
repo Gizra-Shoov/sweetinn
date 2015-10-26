@@ -1,0 +1,10 @@
+{
+  "name": "Behat tests for https://www.sweetinn.com/Apartment/Index/213",
+  "description": "Functional testing for https://www.sweetinn.com/Apartment/Index/213 site.",
+  "require": {
+    "drupal/drupal-extension": "~3.0"
+  },
+  "config": {
+    "bin-dir": "bin/"
+  }
+}
