@@ -63,10 +63,14 @@ describe('Visual monitor testing', function() {
       .url(baseUrl)
       .webdrivercss(testName + '.homepage', {
         name: '1',
-        exclude: [],
-        remove: [],
+        exclude: [
+          '.CalcDetailsWrapper .number'
+        ],
+        remove: [
+          '#habla_beta_container_do_not_rely_on_div_classes_or_names'
+        ],
         hide: [],
-        screenWidth: selectedCaps == 'chrome' ? [640, 960, 1200] : undefined,
+        screenWidth: selectedCaps == 'chrome' ? [960] : undefined,
       }, resultsCallback)
       .call(done);
   });
